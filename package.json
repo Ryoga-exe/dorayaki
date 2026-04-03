@@ -1,0 +1,43 @@
+{
+  "name": "dorayaki",
+  "version": "0.1.0",
+  "description": "Template for embedded development",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ryoga-exe/dorayaki.git"
+  },
+  "homepage": "https://github.com/Ryoga-exe/dorayaki/",
+  "bugs": {
+    "url": "https://github.com/Ryoga-exe/dorayaki/issues/"
+  },
+  "keywords": [
+    "xpack"
+  ],
+  "author": {
+    "name": "Ryoga-exe",
+    "email": "git@ryoga.dev",
+    "url": "https://ryoga.dev"
+  },
+  "license": "MIT",
+  "config": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "xpack": {
+    "minimumXpmRequired": "0.21.4",
+    "dependencies": {},
+    "devDependencies": {
+      "@xpack-dev-tools/riscv-none-elf-gcc": {
+        "specifier": "15.2.0-1.1",
+        "local": "link",
+        "platforms": "all"
+      }
+    },
+    "properties": {},
+    "actions": {},
+    "buildConfigurations": {}
+  }
+}
