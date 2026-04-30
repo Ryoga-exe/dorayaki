@@ -38,9 +38,6 @@
       "gdbPath": "${workspaceFolder}/xpacks/@xpack-dev-tools/riscv-none-elf-gcc/.content/bin/riscv-none-elf-gdb.exe",
       "gdbTarget": "localhost:3333",
       "preLaunchTask": "riscv: debug hello_qemu",
-      "overrideAttachCommands": [
-        "target extended-remote localhost:3333"
-      ],
       "showDevDebugOutput": "raw"
     }
   ]
