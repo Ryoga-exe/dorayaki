@@ -4,6 +4,10 @@
   "description": "Template for embedded development",
   "main": "",
   "scripts": {
+    "build:riscv-hello": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/riscv-hello.ps1 build",
+    "run:riscv-hello": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/riscv-hello.ps1 run",
+    "debug:riscv-hello": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/riscv-hello.ps1 debug",
+    "clean:riscv-hello": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/riscv-hello.ps1 clean",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -30,6 +34,11 @@
     "minimumXpmRequired": "0.21.4",
     "dependencies": {},
     "devDependencies": {
+      "@xpack-dev-tools/qemu-riscv": {
+        "specifier": "9.2.4-1.1",
+        "local": "link",
+        "platforms": "all"
+      },
       "@xpack-dev-tools/riscv-none-elf-gcc": {
         "specifier": "15.2.0-1.1",
         "local": "link",
@@ -37,7 +46,12 @@
       }
     },
     "properties": {},
-    "actions": {},
+    "actions": {
+      "build:riscv-hello": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/riscv-hello.ps1 build",
+      "run:riscv-hello": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/riscv-hello.ps1 run",
+      "debug:riscv-hello": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/riscv-hello.ps1 debug",
+      "clean:riscv-hello": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/riscv-hello.ps1 clean"
+    },
     "buildConfigurations": {}
   }
 }

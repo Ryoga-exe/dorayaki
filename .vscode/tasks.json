@@ -1,0 +1,66 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "riscv: build hello_qemu",
+      "type": "shell",
+      "command": "powershell",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}\\scripts\\riscv-hello.ps1",
+        "build"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "riscv: run hello_qemu",
+      "type": "shell",
+      "command": "powershell",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}\\scripts\\riscv-hello.ps1",
+        "run"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "riscv: debug hello_qemu",
+      "type": "shell",
+      "command": "powershell",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}\\scripts\\riscv-hello.ps1",
+        "debug"
+      ],
+      "problemMatcher": [],
+      "isBackground": true
+    },
+    {
+      "label": "riscv: clean hello_qemu",
+      "type": "shell",
+      "command": "powershell",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}\\scripts\\riscv-hello.ps1",
+        "clean"
+      ],
+      "problemMatcher": []
+    }
+  ]
+}
