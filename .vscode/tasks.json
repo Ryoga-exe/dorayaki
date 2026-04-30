@@ -58,13 +58,7 @@
         "panel": "dedicated"
       },
       "problemMatcher": {
-        "owner": "custom",
-        "pattern": [
-          {
-            "regexp": "^(.*)$",
-            "message": 1
-          }
-        ],
+        "base": "$msCompile",
         "background": {
           "activeOnStart": true,
           "beginsPattern": "^QEMU waiting for GDB on tcp::3333$",
