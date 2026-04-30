@@ -17,6 +17,10 @@
         "kind": "build",
         "isDefault": true
       },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      },
       "problemMatcher": []
     },
     {
@@ -31,6 +35,10 @@
         "${workspaceFolder}\\scripts\\riscv-hello.ps1",
         "run"
       ],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      },
       "problemMatcher": []
     },
     {
@@ -45,7 +53,24 @@
         "${workspaceFolder}\\scripts\\riscv-hello.ps1",
         "debug"
       ],
-      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      },
+      "problemMatcher": {
+        "owner": "custom",
+        "pattern": [
+          {
+            "regexp": "^(.*)$",
+            "message": 1
+          }
+        ],
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": "^QEMU waiting for GDB on tcp::3333$",
+          "endsPattern": "^QEMU waiting for GDB on tcp::3333$"
+        }
+      },
       "isBackground": true
     },
     {
@@ -60,6 +85,10 @@
         "${workspaceFolder}\\scripts\\riscv-hello.ps1",
         "clean"
       ],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      },
       "problemMatcher": []
     }
   ]
