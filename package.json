@@ -4,10 +4,10 @@
   "description": "Template for embedded development",
   "main": "",
   "scripts": {
-    "build:riscv-hello": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/riscv-hello.ps1 build",
-    "run:riscv-hello": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/riscv-hello.ps1 run",
-    "debug:riscv-hello": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/riscv-hello.ps1 debug",
-    "clean:riscv-hello": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/riscv-hello.ps1 clean",
+    "build:riscv-hello": "node scripts/riscv-hello.mjs build",
+    "run:riscv-hello": "node scripts/riscv-hello.mjs run",
+    "debug:riscv-hello": "node scripts/riscv-hello.mjs debug",
+    "clean:riscv-hello": "node scripts/riscv-hello.mjs clean",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -47,10 +47,10 @@
     },
     "properties": {},
     "actions": {
-      "build:riscv-hello": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/riscv-hello.ps1 build",
-      "run:riscv-hello": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/riscv-hello.ps1 run",
-      "debug:riscv-hello": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/riscv-hello.ps1 debug",
-      "clean:riscv-hello": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/riscv-hello.ps1 clean"
+      "build:riscv-hello": "node scripts/riscv-hello.mjs build",
+      "run:riscv-hello": "node scripts/riscv-hello.mjs run",
+      "debug:riscv-hello": "node scripts/riscv-hello.mjs debug",
+      "clean:riscv-hello": "node scripts/riscv-hello.mjs clean"
     },
     "buildConfigurations": {}
   }
