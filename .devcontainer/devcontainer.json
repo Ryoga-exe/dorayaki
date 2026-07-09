@@ -3,7 +3,7 @@
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
   "features": {
     "ghcr.io/devcontainers/features/node:1": {
-      "version": "lts"
+      "version": "24"
     }
   },
   "postCreateCommand": "npm install --global xpm@0.21.4 && xpm install",
@@ -15,6 +15,8 @@
         "marus25.cortex-debug"
       ],
       "settings": {
+        "C_Cpp.default.compilerPath": "${workspaceFolder}/xpacks/.bin/riscv-none-elf-gcc",
+        "C_Cpp.default.cStandard": "c17",
         "terminal.integrated.defaultProfile.linux": "bash"
       }
     }

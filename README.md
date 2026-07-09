@@ -19,6 +19,9 @@ For a host setup, install the local xPack tools manually:
 xpm install
 ```
 
+The `xpacks/` directory is generated for the current platform. If you switch between
+the host and the Dev Container, run `xpm install` again in the environment you are using.
+
 ## Build
 
 ```sh

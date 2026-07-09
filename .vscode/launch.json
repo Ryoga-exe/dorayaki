@@ -9,6 +9,9 @@
       "cwd": "${workspaceFolder}",
       "MIMode": "gdb",
       "miDebuggerPath": "${workspaceFolder}/xpacks/.bin/riscv-none-elf-gdb",
+      "windows": {
+        "miDebuggerPath": "${workspaceFolder}/xpacks/@xpack-dev-tools/riscv-none-elf-gcc/.content/bin/riscv-none-elf-gdb.exe"
+      },
       "miDebuggerServerAddress": "localhost:3333",
       "stopAtEntry": true,
       "externalConsole": false,
@@ -36,6 +39,10 @@
       "armToolchainPath": "${workspaceFolder}/xpacks/.bin",
       "toolchainPrefix": "riscv-none-elf",
       "gdbPath": "${workspaceFolder}/xpacks/.bin/riscv-none-elf-gdb",
+      "windows": {
+        "armToolchainPath": "${workspaceFolder}/xpacks/@xpack-dev-tools/riscv-none-elf-gcc/.content/bin",
+        "gdbPath": "${workspaceFolder}/xpacks/@xpack-dev-tools/riscv-none-elf-gcc/.content/bin/riscv-none-elf-gdb.exe"
+      },
       "gdbTarget": "localhost:3333",
       "preLaunchTask": "riscv: debug hello_qemu",
       "showDevDebugOutput": "raw"
